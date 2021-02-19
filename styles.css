@@ -1,3 +1,58 @@
-body{
-    background: dodgerblue;
+html {
+  font-size: 62.5%;
 }
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container,
+.product {
+  width: 100vw;
+}
+
+.product-image {
+  width: 50rem;
+  margin: 10rem;
+  height: 60rem;
+}
+
+.product-image__primary {
+  height: max-content;
+  margin: 5rem auto 0;
+  width: fit-content;
+}
+
+.product-image__primary img {
+  width: 35rem;
+  height: 35rem;
+  margin-bottom: 2rem;
+  transition: all 0.9s;
+  box-shadow: 0 0 3rem grey;
+}
+
+.product-image__primary img:hover {
+  transform: scale(1.1);
+  margin-bottom: 3rem;
+  box-shadow: 0 0 0 white;
+}
+
+.product-image__secondary {
+  display: flex;
+  height: max-content;
+  justify-content: space-evenly;
+  width: 0 auto;
+}
+
+.product-image__secondary img {
+  width: 15rem;
+  transition: all 0.5s;
+  box-shadow: 0 0 3rem grey;
+}
+
+.product-image__secondary img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 white;
+}
+
